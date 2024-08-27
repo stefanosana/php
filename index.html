@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <form action="sign-up.php" method="post">
+        <div id="name" class="inputBox">
+            <label class="inputLabel">Nome</label>
+            <input type="text" id="nameID" name="nome" onkeyup="textValidate(this)">
+            <span id="nameID_check"></span>
+        </div>
+        <div id="surname" class="inputBox">
+            <label class="inputLabel">Cognome</label>
+            <input type="text" id="surnameID" name="cognome" onkeyup="textValidate(this)">
+            <span id="surnameID_check"></span>
+        </div>
+        <div id="username" class="inputBox">
+            <label class="inputLabel">Username</label>
+            <input type="text" id="usernameID" name="username" onkeyup="textValidate(this)">
+            <span id="usernameID_check"></span>
+        </div>
+        <div id="email" class="inputBox">
+            <label class="inputLabel">Email</label>
+            <input type="text" id="emailID" name="email" onkeyup="emailValidate(this)">
+            <span id="emailID_check"></span>
+        </div>
+        <div id="password" class="inputBox">
+            <label class="inputLabel">Password</label>
+            <input type="password" id="passwordID" name="pass" onkeyup="textValidate(this)">
+            <span id="passwordID_check"></span>
+        </div>  
+        <div id="spedizione" class="inputBox">
+            <label >Indirizzo di Spedizione</label>
+            <br>
+            <textarea rows="3" cols="35" id="spedizioneID" name="spedizione" onkeyup="textValidate(this)">
+            </textarea>
+            <span id="spedizioneID_check"></span>
+        </div>     
+        <br>
+        <input id="registratiBtn" type="submit" name="registrati" value="registrati"></input>
+    </form>
+</body>
+</html>
+
