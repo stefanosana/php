@@ -15,7 +15,7 @@
             echo "<h1 class='welcome-message'>Ciao " . htmlspecialchars($username) . "</h1>";
             ?>
             <p class="welcome-message">
-                <a href="animazione.html">Animazione</a>
+                <a href="">BENVENUTO IN SANA LOGIN</a>
             </p>
             <div class="logout">
                 <a href="logout.php">Logout</a>
